@@ -1,0 +1,33 @@
+.product_cartbox {
+  background-color: var(--white) !important;
+  color: var(--dark-text) !important;
+  width: 100%;
+  border-radius: 0px !important;
+}
+.product_cartbox img {
+  border-radius: 0px !important;
+}
+
+.cart_button {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--primary-green);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 998px) {
+  .product_cartbox {
+    width: 18rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product_cartbox {
+    /* width: 80%; */
+    width: 25rem;
+
+    margin: 0 auto;
+  }
+}

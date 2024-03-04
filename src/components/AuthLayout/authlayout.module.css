@@ -1,0 +1,8 @@
+.layout_container {
+  min-height: 100vh;
+  width: 100%;
+  background-image:
+    url("./images/backgrounds/auth_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;  
+}

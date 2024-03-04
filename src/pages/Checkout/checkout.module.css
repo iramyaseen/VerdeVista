@@ -1,0 +1,189 @@
+.checkout_layout_container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("./images/checkout/checkoutlayoutbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkoutbox {
+  min-height: 80vh;
+  width: 60%;
+  background-color: var(--light-green);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-image: url("./images/checkout/checkoutbox.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 100% 100%;
+}
+
+/* checkout form tite bar */
+.checkoutbox_title_bar {
+  background-image: var(--green-gradient);
+  position: relative;
+  color: var(--white);
+  height: 70px;
+}
+.checkoutbox_title_bar h2 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 27px;
+  line-height: 70px;
+}
+.link_angle {
+  color: var(--white);
+  font-size: 30px;
+}
+.link_angle_side_title {
+  margin-left: 20px;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+/* toggle button */
+.subcription_selection_toggle_box {
+  background-color: var(--primary-green);
+  width: 220px;
+  height: 70px;
+  border-radius: 50px;
+  position: relative;
+  margin: 20px auto;
+}
+.prices_toggle_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: 20;
+  cursor: pointer;
+}
+.prices_toggle_box .plan_price {
+  font-size: 20px;
+}
+.bg_toggle_color_left {
+  background-color: var(--hover-green);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+.bg_toggle_color_right {
+  background-color: var(--hover-green);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: 10;
+  transform: translateX(0%);
+  transition: all 0.3s ease;
+}
+
+/* checkout form */
+
+.form_container {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.form_container > h2 {
+  color: var(--dark-text);
+}
+
+.form_container form label {
+  color: var(--dark-text);
+  font-size: 22px;
+}
+.form_container form input {
+  border: 2px solid var(--primary-green);
+  padding: 10px;
+  color: var(--text-gray) !important;
+}
+
+.form_container forminput::placeholder {
+  color: rgb(196, 180, 180) !important;
+}
+
+.form_container form input[type="radio"] {
+  height: 20px;
+  width: 20px;
+}
+.payment_paypal_icon,
+.payment_card_icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.payment_paypal_icon img {
+  width: 150px;
+}
+
+.payment_card_icon img {
+  width: 60px;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 1200px) {
+  .checkoutbox {
+    width: 70%;
+  }
+  .form_container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 998px) {
+  .checkoutbox {
+    width: 75%;
+  }
+  .payment_paypal_icon,
+  .payment_card_icon {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .checkoutbox {
+    width: 80%;
+  }
+  .checkoutbox_title_bar h2 {
+    font-size: 24px;
+  }
+  .link_angle {
+    font-size: 27px;
+  }
+  .link_angle_side_title {
+    margin-left: 10px;
+    font-size: 19px;
+  }
+  .subcription_selection_toggle_box {
+    width: 250px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .checkoutbox {
+    width: 90%;
+  }
+  .checkoutbox_title_bar h2 {
+    font-size: 22px;
+  }
+  .link_angle {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .link_angle_side_title {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .subcription_selection_toggle_box {
+    width: 230px;
+    height: 60px;
+  }
+  .prices_toggle_box .plan_price {
+    font-size: 17px;
+  }
+}

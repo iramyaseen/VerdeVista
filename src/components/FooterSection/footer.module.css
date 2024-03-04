@@ -1,0 +1,28 @@
+.download_app_section{
+    height: 30vh;
+    width: 100%;
+    background-image: url('./images/footer/footerbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.main_footer{
+    width: 100%;
+    background-image: url('./images/footer/footerbg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.footer_links ul li{
+    list-style: none;
+    padding: 10px 0px;
+}
+.footer_links>ul>li>span{
+    font-weight: 600;
+}
+.footer_link_item{
+    text-decoration: none;
+    color: var(--dark-text);
+}
+.footer_subscription_section input{
+   border: 2px solid var(--primary-green);
+   padding: 10px !important;
+}

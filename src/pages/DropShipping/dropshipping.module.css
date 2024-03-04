@@ -1,0 +1,8 @@
+.dropshipping_wrapper{
+    height: 70vh;
+    width: 100%;
+    background-image: url("./images/about/aboutbanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+

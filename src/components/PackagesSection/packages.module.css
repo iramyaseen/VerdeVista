@@ -1,0 +1,115 @@
+.packages_section_container {
+  background-color: var(--light-green);
+}
+.package_box {
+  padding: 30px 10px;
+  width: 350px;
+  background-color: var(--light-green);
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.package_box_head span,
+.package_box_head p {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.package_box_head h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--dark-text);
+}
+.package_box_services_list {
+  height: 300px;
+  overflow-y: scroll;
+}
+.package_box_services_list ul li {
+  list-style: none;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--light-gray);
+}
+.package_box_services_list::-webkit-scrollbar {
+  width: 3px;
+}
+.package_box_services_list::-webkit-scrollbar-track {
+  background-color: var(--light-green);
+}
+.package_box_services_list::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 2px;
+}
+.package_box_button button {
+  background-color: var(--primary-green);
+  border: 0;
+  outline: none;
+  color: var(--white);
+  padding: 8px 40px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary-green);
+}
+.package_box_button button:active {
+  transform: scale(0.95);
+}
+
+/* package box hover */
+.package_box:hover {
+  background-color: var(--primary-green);
+}
+.package_box:hover .package_box_services_list ul li,
+.package_box:hover .package_box_head span,
+.package_box:hover .package_box_head p,
+.package_box:hover .package_box_head h1 {
+  color: var(--white);
+}
+.package_box:hover .package_box_services_list::-webkit-scrollbar-track {
+  background: var(--primary-green);
+}
+.package_box:hover .package_box_services_list::-webkit-scrollbar-thumb {
+  background-color: var(--light-green);
+}
+.package_box:hover .package_box_button button {
+  background-color: var(--hover-green);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 998px) {
+  .package_box_head span,
+  .package_box_head p,
+  .package_box_services_list ul li {
+    font-size: 22px;
+  }
+  .package_box_head h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .package_box_head span,
+  .package_box_head p,
+  .package_box_services_list ul li {
+    font-size: 20px;
+  }
+  .package_box_head h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .package_box {
+    width: 300px;
+  }
+  .package_box_head span,
+  .package_box_head p,
+  .package_box_services_list ul li {
+    font-size: 18px;
+  }
+  .package_box_head h1 {
+    font-size: 30px;
+  }
+}

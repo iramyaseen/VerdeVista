@@ -1,0 +1,68 @@
+.contact_wrapper {
+  height: 70vh;
+  width: 100%;
+  background-image: url("./images/contact/bannerbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact_form_container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/contact/contactbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_form_box {
+  min-height: 50vh;
+  width: 60%;
+  background-color: var(--light-green);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form_container {
+  width: 40%;
+  margin: 30px auto;
+}
+.form_container form label {
+  font-weight: 600;
+}
+.form_container form input,
+.form_container form textarea {
+  border: 2px solid var(--primary-green);
+  padding: 10px;
+  color: var(--text-gray) !important;
+}
+.form_container form input::placeholder,
+.form_container form textarea::placeholder {
+  color: rgb(196, 180, 180) !important;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1200px) {
+  .form_container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 998px) {
+  .contact_form_box {
+    width: 75%;
+  }
+  .form_container {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact_form_box {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact_form_box {
+    width: 90%;
+  }
+  .form_container {
+    width: 80%;
+  }
+}

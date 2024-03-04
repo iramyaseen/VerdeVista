@@ -1,0 +1,10 @@
+.navbar_container{
+    background-color: var(--light-green)!important;
+}
+.landplan_logo{
+  width: 100px;
+}
+.username{
+  padding: 5px;
+  color: var(--primary-green);
+}

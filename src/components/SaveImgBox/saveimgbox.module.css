@@ -1,0 +1,76 @@
+.img_animate_box {
+  margin: 0px auto !important;
+  width: 488px;
+  height: 536px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.animate_box_img1 {
+  position: absolute;
+  top: 0;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.animate_box_img2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transform: translateX(-100%);
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+.animationText_box {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 30;
+  color: var(--white);
+  background: rgba(0, 128, 0, 0.651);
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+}
+.img_animate_box:hover .animate_box_img2 {
+  transform: translateX(0%);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1550px) {
+  .img_animate_box,
+  .animate_box_img2,
+  .animate_box_img {
+    width: calc(488px - 100px);
+    height: calc(536px - 100px);
+  }
+}
+@media screen and (max-width: 998px) {
+  .img_animate_box,
+  .animate_box_img2,
+  .animate_box_img {
+    width: calc(488px - 70px);
+    height: calc(536px - 70px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .img_animate_box,
+  .animate_box_img2,
+  .animate_box_img {
+    width: calc(488px - 100px);
+    height: calc(536px - 100px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .img_animate_box,
+  .animate_box_img2,
+  .animate_box_img {
+    width: calc(488px - 188px);
+    height: calc(536px - 188px);
+  }
+}
